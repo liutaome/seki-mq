@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    
+
+    <!-- <bean id="messageRocketAListener" class="com.gomemyc.doubleAlive.rocketmq.MessageRocketAListener" lazy-init="true">
+    	<property name="gomeDefaultRocketMqListener" ref="gomeDefaultRocketMqListener"/>
+    </bean> -->
+    
+    <!-- <bean id="consumerA" class="com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer" init-method="start"
+          destroy-method="shutdown" lazy-init="true">
+        <property name="consumerGroup" value="${con.consumerGroup}"/>
+        <property name="namesrvAddr" value="${con.namesrvAddrA}"/>
+        <property name="messageModel" value="${con.messageModel}"/>
+        <property name="instanceName" value="${con.instanceNameA}"/>
+        <property name="subscription">
+            <map>
+                <entry key="${con.topic}" value="*"/>
+            </map>
+        </property>
+        <property name="messageListener" ref="messageRocketAListener"/>
+    </bean> -->
+    
+    <!-- <bean id="messageRocketBListener" class="com.gomemyc.doubleAlive.rocketmq.MessageRocketBListener" lazy-init="true">
+    	<property name="gomeDefaultRocketMqListener" ref="gomeDefaultRocketMqListener"/>
+    </bean> -->
+    
+    <!-- <bean id="consumerB" class="com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer" init-method="start"
+          destroy-method="shutdown" lazy-init="true">
+        <property name="consumerGroup" value="${con.consumerGroup}"/>
+        <property name="namesrvAddr" value="${con.namesrvAddrB}"/>
+        <property name="messageModel" value="${con.messageModel}"/>
+        <property name="instanceName" value="${con.instanceNameB}"/>
+        <property name="subscription">
+            <map>
+                <entry key="${con.topic}" value="*"/>
+            </map>
+        </property>
+        <property name="messageListener" ref="messageRocketBListener"/>
+    </bean> -->
+    
+    
+    <!-- <bean id="producerA" class="com.alibaba.rocketmq.client.producer.DefaultMQProducer" init-method="start" destroy-method="shutdown" lazy-init="true">
+        <property name="namesrvAddr" value="${pro.namesrvAddrA}"/>
+        <property name="producerGroup" value="${pro.producerGroup}"/>
+        <property name="instanceName" value="${pro.instanceNameA}"/>
+    </bean> -->
+    
+    <!-- <bean id="producerB" class="com.alibaba.rocketmq.client.producer.DefaultMQProducer" init-method="start" destroy-method="shutdown" lazy-init="true">
+        <property name="namesrvAddr" value="${pro.namesrvAddrB}"/>
+        <property name="producerGroup" value="${pro.producerGroup}"/>
+        <property name="instanceName" value="${pro.instanceNameB}"/>
+    </bean> -->
+    
+    <!-- <bean id="gomeDefaultRocketMqProducer" class="com.gomemyc.doubleAlive.rocketmq.GomeDefaultRocketMqProducer" lazy-init="true">
+        <property name="producerA" ref="producerA"/>
+        <property name="producerB" ref="producerB"/>
+    </bean> -->
+    
+</beans>
